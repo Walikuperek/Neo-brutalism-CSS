@@ -1,0 +1,150 @@
+/* Layout components */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-sm {
+    width: 90%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.container-lg {
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Flex layouts */
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.gap-sm {
+    gap: var(--space-sm);
+}
+
+.gap-md {
+    gap: var(--space-md);
+}
+
+.gap-lg {
+    gap: var(--space-lg);
+}
+
+/* Grid layouts */
+.grid {
+    display: grid;
+}
+
+.grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-cols-auto {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.gap-grid-md {
+    gap: var(--space-lg);
+}
+
+/* Section layouts */
+.section {
+    padding: var(--space-xxl) 0;
+}
+
+.section-sm {
+    padding: var(--space-xl) 0;
+}
+
+.section-colored {
+    background-color: var(--primary);
+}
+
+.section-dark {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+/* Hero section layout */
+.hero {
+    padding-top: 140px;
+    padding-bottom: var(--space-xxl);
+    position: relative;
+    overflow: hidden;
+    background-color: var(--light);
+}
+
+/* Spacing utilities */
+.mt-sm {
+    margin-top: var(--space-sm);
+}
+
+.mt-md {
+    margin-top: var(--space-md);
+}
+
+.mt-lg {
+    margin-top: var(--space-lg);
+}
+
+.mt-xl {
+    margin-top: var(--space-xl);
+}
+
+.mb-sm {
+    margin-bottom: var(--space-sm);
+}
+
+.mb-md {
+    margin-bottom: var(--space-md);
+}
+
+.mb-lg {
+    margin-bottom: var(--space-lg);
+}
+
+.mb-xl {
+    margin-bottom: var(--space-xl);
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-center {
+    text-align: center;
+}

@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neo-Brutalism CSS Library Showcase</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Grotesk:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Demo-specific styles */
+        .demo-section {
+            padding: var(--space-lg) 0;
+            border-bottom: 2px dashed var(--dark);
+        }
+
+        .demo-title {
+            margin-bottom: var(--space-md);
+        }
+
+        .component-example {
+            margin-bottom: var(--space-lg);
+        }
+
+        .demo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: var(--space-md);
+            margin-top: var(--space-md);
+        }
+
+        .color-swatch {
+            height: 80px;
+            border: var(--border-width) solid var(--dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-offset) var(--shadow-offset) 0 0 var(--dark);
+            margin-bottom: var(--space-sm);
+            color: var(--dark);
+            font-weight: bold;
+        }
+
+        .demo-box {
+            padding: var(--space-md);
+            border: var(--border-width) solid var(--dark);
+            box-shadow: var(--shadow-offset) var(--shadow-offset) 0 0 var(--dark);
+            margin-bottom: var(--space-md);
+        }
+
+        .animation-container {
+            height: 200px;
+            position: relative;
+            border: var(--border-width) solid var(--dark);
+            margin-bottom: var(--space-md);
+            overflow: hidden;
+        }
+
+        .animation-demo {
+            height: 60px;
+            width: 60px;
+            background-color: var(--primary);
+            border: var(--border-width) solid var(--dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        code {
+            background: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: monospace;
+            font-size: 0.9em;
+        }
+
+        .tech-bubble {
+            display: inline-block;
+            padding: 8px 16px;
+            background: var(--bg-card-1);
+            border: var(--border-width) solid var(--dark);
+            box-shadow: var(--shadow-offset) var(--shadow-offset) 0 0 var(--dark);
+            margin: 0 8px 12px 0;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">N</div>
+                Neo-Brutalism
+            </a>
+            <ul class="menu">
+                <li><a href="#typography">Typography</a></li>
+                <li><a href="#components">Components</a></li>
+                <li><a href="#layout">Layout</a></li>
+                <li><a href="#animations">Animations</a></li>
+                <li><a href="#examples">Examples</a></li>
+            </ul>
+            <button class="mobile-menu-button">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Neo-Brutalism <span class="highlight highlight-yellow">CSS Library</span></h1>
+                    <p>A comprehensive showcase of all components and styles for creating stunning neo-brutalist
+                        websites.</p>
+                    <div class="neo-button-group">
+                        <a href="#components" class="neo-btn">Explore Components</a>
+                        <a href="#examples" class="neo-btn neo-btn-secondary">View Examples</a>
+                    </div>
+                </div>
+                <div class="hero-animation">
+                    <div class="shape1 pulse-shape"
+                        style="position: absolute; width: 80px; height: 80px; background-color: var(--primary); border: 4px solid var(--dark); top: 20%; left: 30%;">
+                    </div>
+                    <div class="shape2"
+                        style="position: absolute; width: 120px; height: 120px; background-color: var(--yellow); border: 4px solid var(--dark); bottom: 20%; right: 20%;">
+                    </div>
+                    <div class="shape3"
+                        style="position: absolute; width: 60px; height: 60px; background-color: var(--accent); border: 4px solid var(--dark); bottom: 30%; left: 20%;">
+                    </div>
+                    <div class="rotate-circle"
+                        style="position: absolute; width: 100px; height: 100px; border: 4px solid var(--dark); border-radius: 50%; top: 30%; right: 30%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Variables & Colors -->
+    <section id="variables" class="demo-section">
+        <div class="container">
+            <h2 class="demo-title">Color Variables</h2>
+            <div class="demo-grid">
+                <div>
+                    <div class="color-swatch" style="background-color: var(--primary);">--primary</div>
+                </div>
+                <div>
+                    <div class="color-swatch" style="background-color: var(--secondary);">--secondary</div>
+                </div>
+                <div>
+                    <div class="color-swatch" style="background-color: var(--accent);">--accent</div>
+                </div>
+                <div>
+                    <div class="color-swatch" style="background-color: var(--dark); color: var(--light);">--dark</div>
+                </div>
+                <div>
+                    <div class="color-swatch" style="background-color: var(--light);">--light</div>
+                </div>
+                <div>
+                    <div class="color-swatch" style="background-color: var(--yellow);">--yellow</div>
+                </div>
+                <div>
+                    <div class="color-swatch" style="background-color: var(--green);">--green</div>
+                </div>
+            </div>
+
+            <h3 class="mt-lg">Background Card Colors</h3>
+            <div class="demo-grid">
+                <div>
+                    <div class="color-swatch" style="background-color: var(--bg-card-1);">--bg-card-1</div>
+                </div>
+                <div>
+                    <div class="color-swatch" style="background-color: var(--bg-card-2);">--bg-card-2</div>
+                </div>
+                <div>
+                    <div class="color-swatch" style="background-color: var(--bg-card-3);">--bg-card-3</div>
+                </div>
+                <div>
+                    <div class="color-swatch" style="background-color: var(--bg-card-4);">--bg-card-4</div>
+                </div>
+                <div>
+                    <div class="color-swatch" style="background-color: var(--bg-card-5);">--bg-card-5</div>
+                </div>
+                <div>
+                    <div class="color-swatch" style="background-color: var(--bg-card-6);">--bg-card-6</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Typography -->
+    <section id="typography" class="demo-section">
+        <div class="container">
+            <h2 class="demo-title">Typography</h2>
+
+            <div class="component-example">
+                <h1>Heading Level 1</h1>
+                <h2>Heading Level 2</h2>
+                <h3>Heading Level 3</h3>
+                <h4>Heading Level 4</h4>
+                <h5>Heading Level 5</h5>
+                <h6>Heading Level 6</h6>
+
+                <p class="mt-md">This is regular paragraph text using the Inter font. Neo-brutalism typography focuses
+                    on clear readability with bold headings and clean body text.</p>
+
+                <h3 class="mt-md">Text Highlights</h3>
+                <p>Regular text with <span class="highlight highlight-yellow">yellow highlight</span> and <span
+                        class="highlight highlight-primary">primary highlight</span> examples.</p>
+
+                <h3 class="mt-md">Section Titles</h3>
+                <h2 class="section-title">Decorative Section Title</h2>
+                <p class="section-description">This is a section description that provides additional context.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Components -->
+    <section id="components" class="demo-section">
+        <div class="container">
+            <h2 class="demo-title">Neo-Brutalism Components</h2>
+
+            <!-- Buttons -->
+            <div class="component-example">
+                <h3>Buttons</h3>
+                <div class="flex gap-md mt-md flex-wrap">
+                    <button class="neo-btn">Primary Button</button>
+                    <button class="neo-btn neo-btn-secondary">Secondary Button</button>
+                    <button class="neo-btn neo-btn-accent">Accent Button</button>
+                    <button class="neo-btn neo-btn-yellow">Yellow Button</button>
+                    <button class="neo-btn neo-btn-green">Green Button</button>
+                </div>
+
+                <div class="flex gap-md mt-md">
+                    <button class="neo-btn neo-btn-lg">Large Button</button>
+                    <button class="neo-btn">Regular Button</button>
+                    <button class="neo-btn neo-btn-sm">Small Button</button>
+                </div>
+            </div>
+
+            <!-- Cards -->
+            <div class="component-example">
+                <h3>Cards</h3>
+                <div class="grid grid-cols-3 gap-grid-md mt-md">
+                    <div class="neo-card">
+                        <h3>Basic Card</h3>
+                        <p>This is a simple card with default styling.</p>
+                    </div>
+
+                    <div class="neo-card" style="background-color: var(--bg-card-2);">
+                        <h3>Colored Card</h3>
+                        <p>Cards can have different background colors.</p>
+                    </div>
+
+                    <div class="neo-card" style="background-color: var(--bg-card-3);">
+                        <h3>Feature Card</h3>
+                        <p>Highlight features or services with cards.</p>
+                        <button class="neo-btn neo-btn-sm mt-md">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Icons -->
+            <div class="component-example">
+                <h3>Icons</h3>
+                <div class="flex gap-md mt-md">
+                    <div class="neo-icon">🚀</div>
+                    <div class="neo-icon">💻</div>
+                    <div class="neo-icon">🎨</div>
+                    <div class="neo-icon neo-icon-sm">📱</div>
+                    <div class="neo-icon neo-icon-sm">✉️</div>
+                </div>
+            </div>
+
+            <!-- Bubbles/Tags -->
+            <div class="component-example">
+                <h3>Bubbles/Tags</h3>
+                <div class="flex gap-sm flex-wrap mt-md">
+                    <span class="neo-bubble">Design</span>
+                    <span class="neo-bubble">Development</span>
+                    <span class="neo-bubble">Branding</span>
+                    <span class="neo-bubble">UX/UI</span>
+                    <span class="neo-bubble">Frontend</span>
+                </div>
+            </div>
+
+            <!-- Images -->
+            <div class="component-example">
+                <h3>Images</h3>
+                <div class="grid grid-cols-2 gap-grid-md mt-md">
+                    <img src="https://place-hold.it/600x400" alt="Placeholder" class="neo-image">
+                    <img src="https://place-hold.it/600x400" alt="Placeholder" class="neo-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Layout Systems -->
+    <section id="layout" class="demo-section">
+        <div class="container">
+            <h2 class="demo-title">Layout System</h2>
+
+            <!-- Container -->
+            <div class="component-example">
+                <h3>Containers</h3>
+                <div class="demo-box">
+                    <p>This is the default <code>.container</code> class</p>
+                </div>
+                <div class="container-sm demo-box mt-md">
+                    <p>This is the smaller <code>.container-sm</code> class</p>
+                </div>
+                <div class="container-lg demo-box mt-md">
+                    <p>This is the larger <code>.container-lg</code> class</p>
+                </div>
+            </div>
+
+            <!-- Flexbox -->
+            <div class="component-example">
+                <h3>Flexbox</h3>
+                <div class="flex items-center justify-between demo-box">
+                    <div>Left side</div>
+                    <div>Center</div>
+                    <div>Right side</div>
+                </div>
+
+                <div class="flex flex-col gap-md demo-box mt-md">
+                    <div>Flex column item 1</div>
+                    <div>Flex column item 2</div>
+                    <div>Flex column item 3</div>
+                </div>
+            </div>
+
+            <!-- Grid -->
+            <div class="component-example">
+                <h3>Grid</h3>
+                <div class="grid grid-cols-3 gap-grid-md demo-box">
+                    <div class="p-md border bg-card-1">Grid item 1</div>
+                    <div class="p-md border bg-card-2">Grid item 2</div>
+                    <div class="p-md border bg-card-3">Grid item 3</div>
+                    <div class="p-md border bg-card-4">Grid item 4</div>
+                    <div class="p-md border bg-card-5">Grid item 5</div>
+                    <div class="p-md border bg-card-6">Grid item 6</div>
+                </div>
+
+                <div class="grid grid-cols-auto gap-grid-md demo-box mt-md">
+                    <div class="p-md border bg-card-1">Auto item 1</div>
+                    <div class="p-md border bg-card-2">Auto item 2</div>
+                    <div class="p-md border bg-card-3">Auto item 3</div>
+                    <div class="p-md border bg-card-4">Auto item 4</div>
+                </div>
+            </div>
+
+            <!-- Sections -->
+            <div class="component-example">
+                <h3>Sections</h3>
+                <section class="section demo-box">
+                    <h2 class="section-title">Regular Section</h2>
+                    <p>This demonstrates a standard section layout.</p>
+                </section>
+
+                <section class="section section-colored neo-border-top neo-border-bottom mt-md">
+                    <h2 class="section-title">Colored Section</h2>
+                    <p>This is a colored section with top and bottom borders.</p>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- Component Examples -->
+    <section id="component-showcase" class="demo-section">
+        <div class="container">
+            <h2 class="demo-title">Component Showcase</h2>
+
+            <!-- Service Cards -->
+            <div class="component-example">
+                <h3>Service Cards</h3>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🎨</div>
+                        <h3>Web Design</h3>
+                        <p>Bold, brutalist designs that make your brand stand out from the crowd.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">💻</div>
+                        <h3>Development</h3>
+                        <p>Clean, efficient code that brings your designs to life.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">📱</div>
+                        <h3>Mobile Apps</h3>
+                        <p>Cross-platform applications with distinctive brutalist aesthetics.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technology Bubbles -->
+            <div class="component-example">
+                <h3>Technology Bubbles</h3>
+                <div class="section section-colored neo-border-top neo-border-bottom text-center p-lg">
+                    <h2 class="section-title">Technologies</h2>
+                    <div class="tech-bubbles">
+                        <span class="tech-bubble">HTML5</span>
+                        <span class="tech-bubble">CSS3</span>
+                        <span class="tech-bubble">JavaScript</span>
+                        <span class="tech-bubble">React</span>
+                        <span class="tech-bubble">Node.js</span>
+                        <span class="tech-bubble">Python</span>
+                        <span class="tech-bubble">Figma</span>
+                        <span class="tech-bubble">Illustrator</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="component-example">
+                <h3>CTA Section</h3>
+                <section class="cta">
+                    <div class="container text-center">
+                        <h2>Ready to Get Started?</h2>
+                        <p>Join thousands of satisfied customers using our product.</p>
+                        <a href="#" class="neo-btn mt-md">Get Started</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- Animations -->
+    <section id="animations" class="demo-section">
+        <div class="container">
+            <h2 class="demo-title">Animations</h2>
+
+            <div class="grid grid-cols-2 gap-grid-md">
+                <!-- Float animation -->
+                <div>
+                    <h3>Float Animation</h3>
+                    <div class="animation-container">
+                        <div class="animation-demo float">Float</div>
+                    </div>
+                </div>
+
+                <!-- Pulse animation -->
+                <div>
+                    <h3>Pulse Animation</h3>
+                    <div class="animation-container">
+                        <div class="animation-demo pulse-shape">Pulse</div>
+                    </div>
+                </div>
+
+                <!-- Rotate animation -->
+                <div>
+                    <h3>Rotate Animation</h3>
+                    <div class="animation-container">
+                        <div class="animation-demo rotate-circle">Rotate</div>
+                    </div>
+                </div>
+
+                <!-- Hover effects -->
+                <div>
+                    <h3>Hover Effects</h3>
+                    <div class="animation-container">
+                        <div class="animation-demo hover-lift">Hover Me</div>
+                    </div>
+                </div>
+
+                <!-- Loading animation -->
+                <div>
+                    <h3>Spin Animation</h3>
+                    <div class="animation-container">
+                        <div class="animation-demo spin">Spin</div>
+                    </div>
+                </div>
+
+                <!-- Entrance animations -->
+                <div>
+                    <h3>Entrance Animations</h3>
+                    <div class="animation-container">
+                        <div class="animation-demo fade-in">Fade In</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Utilities -->
+    <section id="utilities" class="demo-section">
+        <div class="container">
+            <h2 class="demo-title">Utilities</h2>
+
+            <!-- Display -->
+            <div class="component-example">
+                <h3>Display</h3>
+                <div class="block p-md border mt-md mb-md">Block element</div>
+                <span class="inline-block p-md border">Inline block element</span>
+                <span class="inline-block p-md border ml-md">Another inline block</span>
+            </div>
+
+            <!-- Spacing -->
+            <div class="component-example">
+                <h3>Spacing</h3>
+                <div class="p-lg border mt-lg mb-md">Padding large</div>
+                <div class="p-md border mt-md mb-md">Padding medium</div>
+                <div class="p-sm border mt-sm mb-sm">Padding small</div>
+                <div class="p-xs border mt-xs mb-xs">Padding extra small</div>
+                <div class="mx-auto p-md border mt-md" style="width: 50%;">Horizontally centered</div>
+            </div>
+
+            <!-- Colors -->
+            <div class="component-example">
+                <h3>Colors</h3>
+                <div class="bg-primary text-light p-md mb-md">Primary background with light text</div>
+                <div class="bg-secondary text-light p-md mb-md">Secondary background with light text</div>
+                <div class="bg-light text-dark p-md mb-md">Light background with dark text</div>
+                <div class="bg-dark text-light p-md">Dark background with light text</div>
+            </div>
+
+            <!-- Text Alignment -->
+            <div class="component-example">
+                <h3>Text Alignment</h3>
+                <p class="text-left border p-md mb-md">Left-aligned text (default)</p>
+                <p class="text-center border p-md mb-md">Centered text</p>
+                <p class="text-right border p-md">Right-aligned text</p>
+            </div>
+
+            <!-- Borders & Shadows -->
+            <div class="component-example">
+                <h3>Borders & Shadows</h3>
+                <div class="border shadow-neo p-md mb-md">Element with border and shadow</div>
+                <div class="border-bold shadow-neo-lg p-md">Bold border and large shadow</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Complete Examples -->
+    <section id="examples" class="demo-section">
+        <div class="container">
+            <h2 class="demo-title">Complete Examples</h2>
+
+            <!-- Complete Hero Section -->
+            <div class="component-example">
+                <h3>Complete Hero Section</h3>
+                <section class="hero" style="background-color: var(--bg-card-1);">
+                    <div class="container">
+                        <div class="hero-content">
+                            <div class="hero-text">
+                                <h1>Bold, Brutalist <span class="highlight highlight-yellow">Design</span></h1>
+                                <p>Create stunning neo-brutalist websites with our comprehensive CSS library.</p>
+                                <div class="neo-button-group">
+                                    <a href="#" class="neo-btn">Get Started</a>
+                                    <a href="#" class="neo-btn neo-btn-secondary">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="hero-animation">
+                                <div class="shape1 pulse-shape"
+                                    style="position: absolute; width: 80px; height: 80px; background-color: var(--primary); border: 4px solid var(--dark); top: 20%; left: 30%;">
+                                </div>
+                                <div class="shape2"
+                                    style="position: absolute; width: 120px; height: 120px; background-color: var(--yellow); border: 4px solid var(--dark); bottom: 20%; right: 20%;">
+                                </div>
+                                <div class="shape3"
+                                    style="position: absolute; width: 60px; height: 60px; background-color: var(--accent); border: 4px solid var(--dark); bottom: 30%; left: 20%;">
+                                </div>
+                                <div class="rotate-circle"
+                                    style="position: absolute; width: 100px; height: 100px; border: 4px solid var(--dark); border-radius: 50%; top: 30%; right: 30%;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <a href="#" class="footer-logo">
+                        <div class="footer-logo-icon">N</div>
+                        Neo-Brutalism
+                    </a>
+                    <p>A comprehensive CSS library for creating bold, distinctive neo-brutalist websites.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">📱</a>
+                        <a href="#" class="social-link">📸</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#typography">Typography</a></li>
+                        <li><a href="#components">Components</a></li>
+                        <li><a href="#layout">Layout</a></li>
+                        <li><a href="#animations">Animations</a></li>
+                        <li><a href="#examples">Examples</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <span>123 Design Street, Creative City</span>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <span>+1 234 567 890</span>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <span>hello@neobrutalismcss.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Neo-Brutalism CSS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile menu script -->
+    <script>
+        document.querySelector('.mobile-menu-button').addEventListener('click', function () {
+            document.querySelector('.menu').classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+/* Main CSS file that imports all modules */
+
+@import 'variables.css';
+@import 'reset.css';
+@import 'typography.css';
+@import 'neo-brutalism.css';
+@import 'layout.css';
+@import 'components.css';
+@import 'animations.css';
+@import 'responsive.css';
+@import 'utilities.css';

@@ -1,0 +1,57 @@
+/* Theme customization file - Override variables here */
+
+:root {
+    /* Example of theme customization */
+    
+    /* Neon Theme */
+    /*
+    --primary: #FF00FF;
+    --secondary: #00FFFF;
+    --accent: #00FF00;
+    --dark: #121212;
+    --light: #F0F0F0;
+    --yellow: #FFFF00;
+    --green: #39FF14;
+    */
+    
+    /* Earth Tones Theme */
+    /*
+    --primary: #D4A373;
+    --secondary: #588157;
+    --accent: #A3B18A;
+    --dark: #3A3B3C;
+    --light: #FEFAE0;
+    --yellow: #E9C46A;
+    --green: #606C38;
+    */
+    
+    /* Monochrome Theme */
+    /*
+    --primary: #404040;
+    --secondary: #808080;
+    --accent: #A0A0A0;
+    --dark: #181818;
+    --light: #F5F5F5;
+    --yellow: #D0D0D0;
+    --green: #606060;
+    */
+    
+    /* Pastel Theme */
+    /*
+    --primary: #FFB4A2;
+    --secondary: #B5E2FA;
+    --accent: #FFCFD2;
+    --dark: #6D6875;
+    --light: #F8EDEB;
+    --yellow: #F9DC5C;
+    --green: #A3C4BC;
+    */
+    
+    /* Custom shadow and border sizes */
+    /*
+    --border-width: 4px;
+    --border-width-bold: 6px;
+    --shadow-offset: 6px;
+    --shadow-offset-large: 12px;
+    */
+}

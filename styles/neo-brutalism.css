@@ -1,0 +1,137 @@
+/* Neo-brutalism core components */
+
+/* Buttons */
+.neo-btn {
+    background: var(--primary);
+    color: var(--dark);
+    border: var(--border-width) solid var(--dark);
+    padding: 12px 24px;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--dark);
+    transition: all var(--transition-speed) var(--transition-ease);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.neo-btn:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: calc(var(--shadow-offset) + 2px) calc(var(--shadow-offset) + 2px) 0 var(--dark);
+}
+
+.neo-btn:active {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0 var(--dark);
+}
+
+.neo-btn-secondary {
+    background: var(--light);
+}
+
+.neo-btn-accent {
+    background: var(--accent);
+}
+
+.neo-btn-yellow {
+    background: var(--yellow);
+}
+
+.neo-btn-green {
+    background: var(--green);
+}
+
+.neo-btn-lg {
+    padding: 14px 28px;
+    font-size: 1.1rem;
+}
+
+.neo-btn-sm {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+}
+
+/* Cards */
+.neo-card {
+    background-color: var(--light);
+    border: var(--border-width) solid var(--dark);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-offset-large) var(--shadow-offset-large) 0 var(--dark);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.neo-card:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: calc(var(--shadow-offset-large) + 4px) calc(var(--shadow-offset-large) + 4px) 0 var(--dark);
+}
+
+/* Boxes */
+.neo-box {
+    border: var(--border-width) solid var(--dark);
+    box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--dark);
+    padding: var(--space-md);
+}
+
+/* Icons */
+.neo-icon {
+    background-color: var(--light);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--border-width) solid var(--dark);
+}
+
+.neo-icon-sm {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+}
+
+.neo-icon-circle {
+    border-radius: 50%;
+}
+
+/* Bubbles/Tags */
+.neo-bubble {
+    background: var(--light);
+    border: var(--border-width) solid var(--dark);
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--dark);
+    transition: all var(--transition-speed) var(--transition-ease);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.neo-bubble:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: calc(var(--shadow-offset) + 2px) calc(var(--shadow-offset) + 2px) 0 var(--dark);
+}
+
+/* Images */
+.neo-image {
+    border: var(--border-width-bold) solid var(--dark);
+    box-shadow: var(--shadow-offset-large) var(--shadow-offset-large) 0 var(--dark);
+}
+
+/* Borders and sections */
+.neo-border-top {
+    border-top: var(--border-width-bold) solid var(--dark);
+}
+
+.neo-border-bottom {
+    border-bottom: var(--border-width-bold) solid var(--dark);
+}
+
+.neo-section {
+    position: relative;
+    border-top: var(--border-width-bold) solid var(--dark);
+    border-bottom: var(--border-width-bold) solid var(--dark);
+}
