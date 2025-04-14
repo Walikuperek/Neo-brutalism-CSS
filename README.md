@@ -1,6 +1,6 @@
 # Neo-Brutalism CSS Library
 
-> DEMO <a href="https://quak.com.pl/lib/neo-brutalism/">https://quak.com.pl/lib/neo-brutalism/</a>
+> DEMO <a href="https://quak.com.pl/lib/neo-brutalism/" target="_blank">https://quak.com.pl/lib/neo-brutalism/</a>
 
 <svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
   <!-- Background -->
