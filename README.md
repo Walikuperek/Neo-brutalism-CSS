@@ -254,7 +254,7 @@ The library includes a responsive system with breakpoints:
 
 ## 📚 Examples
 
-Check out the [showcase page](https://yourusername.github.io/neo-brutalism-css/neo-showcase.html) for a complete demonstration of all components and features.
+Check out the [showcase page](https://quak.com.pl/lib/neo-brutalism/) for a complete demonstration of all components and features.
 
 ### Complete Hero Section
 
