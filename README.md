@@ -1,30 +1,13 @@
 # Neo-Brutalism CSS Library
 
-> DEMO <a href="https://quak.com.pl/lib/neo-brutalism/" target="_blank">https://quak.com.pl/lib/neo-brutalism/</a>
+![img](showcase_img.png)
 
-<svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
-  <rect x="10" y="10" width="780" height="180" fill="#FFE6D8" stroke="#141414" stroke-width="4"/>
-  
-  <!-- Title Box -->
-  <rect x="40" y="40" width="400" height="70" fill="#FF6B35" stroke="#141414" stroke-width="4"/>
-  <text x="60" y="90" font-family="Arial" font-weight="bold" font-size="36" fill="#141414">NEO-BRUTALISM CSS</text>
-  
-  <!-- Components Illustration -->
-  <rect x="500" y="40" width="80" height="80" fill="#3A86FF" stroke="#141414" stroke-width="4"/>
-  <rect x="600" y="40" width="80" height="80" fill="#8338EC" stroke="#141414" stroke-width="4" transform="rotate(8, 640, 80)"/>
-  <circle cx="650" cy="130" r="40" fill="#FFBE0B" stroke="#141414" stroke-width="4"/>
-  
-  <!-- Decorative Elements -->
-  <rect x="40" y="130" width="150" height="40" fill="#06D6A0" stroke="#141414" stroke-width="4"/>
-  <text x="55" y="157" font-family="Arial" font-weight="bold" font-size="20" fill="#141414">COMPONENTS</text>
-  
-  <rect x="210" y="130" width="150" height="40" fill="#D8EEFE" stroke="#141414" stroke-width="4"/>
-  <text x="230" y="157" font-family="Arial" font-weight="bold" font-size="20" fill="#141414">UTILITIES</text>
-  
-  <rect x="380" y="130" width="100" height="40" fill="#E9D8FF" stroke="#141414" stroke-width="4"/>
-  <text x="397" y="157" font-family="Arial" font-weight="bold" font-size="18" fill="#141414">LAYOUT</text>
-</svg>
+<p align="center">
+  <img src="https://img.shields.io/github/license/walikuperek/qtheme" />
+</p>
+<p align="center">
+  DEMO <a href="https://quak.com.pl/lib/neo-brutalism/" target="_blank">https://quak.com.pl/lib/neo-brutalism/</a>
+</p>
 
 A comprehensive CSS library for creating stunning websites with a neo-brutalist aesthetic. This library provides ready-to-use components, utilities, and layout systems to build modern, bold web designs.
 
