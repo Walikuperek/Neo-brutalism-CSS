@@ -25,13 +25,7 @@ A comprehensive CSS library for creating stunning websites with a neo-brutalist 
 
 ### Quick Start
 
-Include the main CSS file in your HTML:
-
-```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yourusername/neo-brutalism-css/css/main.css">
-```
-
-Or download and include it locally:
+Download and include the main CSS file in your HTML:
 
 ```html
 <link rel="stylesheet" href="css/main.css">
